@@ -1,0 +1,43 @@
+EXPERIMENT:
+  NAME: "resnet32x4,resnet32x4"
+  TAG: "resnet32x4,resnet32x4"
+  PROJECT: "cifar100_baselines"
+DISTILLER:
+  TYPE: "CAT_KD"
+  TEACHER: "resnet32x4"
+  STUDENT: "resnet32x4"
+SOLVER:
+  BATCH_SIZE: 64
+  EPOCHS: 240
+  LR: 0.05
+  LR_DECAY_STAGES: [150, 180, 210]
+  LR_DECAY_RATE: 0.1
+  WEIGHT_DECAY: 0.0005
+  MOMENTUM: 0.9
+  TYPE: "SGD"
+
+LOG:
+  WANDB: False
+  
+DATASET:
+  REDUCTION: True
+  RESERVED_RATE: 1.
+  RESERVED_CLASS_NUM: 99
+
+CAT_KD:
+  LOSS:
+    # β
+    CAT_loss_weight: 50.
+    # the resolution of the transferred CAMs after the average pooling function
+    CAM_RESOLUTION: 2
+    CE_WEIGHT: 0.
+  # True: CAT
+  # False: CAT-KD
+  onlyCAT: True
+  IF_NORMALIZE: True
+  # default use average activation of CAM as the threshold
+  IF_BINARIZE: False
+
+# true: convert the normal CNN to our style
+if_test: True
+device: 1
