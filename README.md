@@ -19,7 +19,7 @@ python tools/train.py --cfg configs/cifar100/CAT/CAT_Binarization/res32x4_res32x
 To facilitate the reproduction/exploration of CAT/CAT-KD, here we present the function of the keywords contained in the config files.
 | Keyword                    | Function                                                                                                 |
 |----------------------------|----------------------------------------------------------------------------------------------------------|
-| CAT_loss_weight            | β, the coefficient of CAT loss. loss.                                                 |
+| CAT_loss_weight            | β, the coefficient of CAT loss.                                                 |
 | CAM_RESOLUTION             | The resolution of the transferred CAMs after the average pooling function.                               |
 | onlyCAT                    | True: Only CAT loss is used.<br>False: Both CAT loss and CE loss are used. |
 | IF_NORMALIZE               | True: perform normalization on the transferred CAMs.                                                     |
