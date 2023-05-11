@@ -1,5 +1,5 @@
 # CAT-KD
-This repository is the official implementation of our paper 'Class Attention Transfer Based Knowledge Distillation', accepted in CVPR 2023.
+This repository is the official implementation of our paper '[Class Attention Transfer Based Knowledge Distillation](https://arxiv.org/abs/2304.12777)', accepted in CVPR 2023.
 # Guidance
 Our implementation is based on [MDistiller](https://github.com/megvii-research/mdistiller). Here we introduce the guidance for reproducing the experiments reported in the paper, more detailed usage of the framework please refer to [MDistiller](https://github.com/megvii-research/mdistiller).
 
