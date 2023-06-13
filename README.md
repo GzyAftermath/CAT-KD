@@ -38,7 +38,7 @@ To facilitate the reproduction/exploration of CAT/CAT-KD, here we present the fu
 Our implementation is based on [MDistiller](https://github.com/megvii-research/mdistiller), which is an efficient distillation framework. If what you need is a framework to implement your method, we recommend you to use the vanilla version.
 # Citation
 Please cite our paper if our paper/code helps your research.
-
+```
 @inproceedings{guo2023class,
   title={Class Attention Transfer Based Knowledge Distillation},
   author={Guo, Ziyao and Yan, Haonan and Li, Hui and Lin, Xiaodong},
@@ -46,3 +46,4 @@ Please cite our paper if our paper/code helps your research.
   pages={11868--11877},
   year={2023}
 }
+```
