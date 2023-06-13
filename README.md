@@ -36,3 +36,13 @@ To facilitate the reproduction/exploration of CAT/CAT-KD, here we present the fu
 2. The value of CAT loss is affected by the models' architecture, don't forget to tune β to keep CAT loss within a reasonable range (maybe 1~50 after the first epoch).
 ## Usage of the distillation framework.
 Our implementation is based on [MDistiller](https://github.com/megvii-research/mdistiller), which is an efficient distillation framework. If what you need is a framework to implement your method, we recommend you to use the vanilla version.
+# Citation
+Please cite our paper if our paper/code helps your research.
+
+@inproceedings{guo2023class,
+  title={Class Attention Transfer Based Knowledge Distillation},
+  author={Guo, Ziyao and Yan, Haonan and Li, Hui and Lin, Xiaodong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11868--11877},
+  year={2023}
+}
